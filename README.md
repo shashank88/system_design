@@ -7,7 +7,7 @@ If you are already familiar with the basics ( given below) it will take you ~2 m
 
 ## Index
 - [ ] [Where to start from?](#start)
-- [ ] [BASICS](#basics)
+- [ ] [basics](#basics)
 - [ ] [How to answer in interviews](#howtoans)
 - [ ] [Steps how I approach the system design questions in interviews](#myapproach)
 - [ ] [Common Design questions](#designques)
