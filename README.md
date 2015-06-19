@@ -2,18 +2,18 @@
 * How to prepare and answer system design questions:
 
 ## Objective
-I collected and studied from a lot of links while preparing for interviews this year and realized that unlike coding questions which has plenty of good repos and combined resources , system design remains elusive. People end up reading from scattered resources and might get pigeon-holed into studying one specific domain and get tongue tied when answering such questions. Hence I collected these links and design techniques for interviews , thought I should share with everyone :)
-If you are already familiar with the basics ( given below) it will take you ~2 months to gain a strong foothold over such questions . If you have much less time , scroll down to the bottom for the tl;dr version :)
+I collected and studied from a lot of links while preparing for interviews this year and realized that unlike coding questions which has plenty of good repos and combined resources , system design remains elusive. People end up reading from scattered resources and might get pigeon-holed into studying one specific domain and get tongue tied when answering such questions. Hence I collected these links and design techniques for interviews , thought I should share with everyone :bowtie:
+If you are already familiar with the basics ( given below) it will take you ~2 months to gain a strong foothold over such questions . If you have much less time , scroll down to the bottom for the tl;dr version :relieved:
 
-## INDEX
--[] [Where to start from?](#start)
--[] [BASICS](#basics)
--[] [How to answer in interviews](#howtoans)
--[] [Steps how I approach the system design questions in interviews](#myapproach)
--[] [Common Design questions](#designques)
--[] [architecture](#architecture)
--[] [company engineering blog links](#blog)
--[] [Low on time ?](#tldr)
+## Index
+- [ ] [Where to start from?](#start)
+- [ ] [BASICS](#basics)
+- [ ] [How to answer in interviews](#howtoans)
+- [ ] [Steps how I approach the system design questions in interviews](#myapproach)
+- [ ] [Common Design questions](#designques)
+- [ ] [architecture](#architecture)
+- [ ] [company engineering blog links](#blog)
+- [ ] [Low on time ?](#tldr)
 
 ## <a name='start'>Where to start from?</a>
 
@@ -27,7 +27,7 @@ Feel free to go through other lectures if needed.
 * 
 These talks should give you decent ammo to start formulating some architectures yourself . 
 
-## <a name 'basics'>BASICS</a>
+## <a name 'basics'>Basics</a>
 
 But before you begin , here are some topics(in no particular order) which in my opinion you should have a decent idea of before proceeding.
 
@@ -52,9 +52,9 @@ Should know the TCP/IP stack , basics of how internet , HTTP , TCP/IP work at th
 
 These are the steps I go through mentally in the interviews , followed by actual interview experiences:
 
-* a) Be absolutely sure you understand the problem being asked , clarify on the onset rather than assuming anything 
-* b) Use-cases . This is critical , you MUST know what is the system going to be used for , what is the scale it is going to be used for . Also constraints like requests per second, requests types, data written per second, data read per second.
-* c) Solve the problem for a very small set, say 100 users . This will broadly help you figure out the data structures , components , abstract design of the overall model
+* a) **Be absolutely sure you understand the problem being asked** , clarify on the onset rather than assuming anything 
+* b) **Use-cases** . This is critical , you MUST know what is the system going to be used for , what is the scale it is going to be used for . Also constraints like requests per second, requests types, data written per second, data read per second.
+* c) Solve the problem for a **very small set**, say 100 users . This will broadly help you figure out the data structures , components , abstract design of the overall model
 * d) Write down the various components figured out so far and how will they interact with each other.
 * e)  As a rule of thumb remember atleast these :
  * 1.processing and servers
@@ -66,7 +66,7 @@ These are the steps I go through mentally in the interviews , followed by actual
  * 7.CDN 
  * 8. Monetization : if relevant , how will you monetize?
  eg . What kind of DB (will mysql do ? or nosql fits btr? ) , do you need caching (almost always !) and how much , is security a prime concern? 
-* f) Special cases for the question asked. Eg say designing a system for storing thumbnails , will a file system suffice ? What if you have to scale for facebook or google? Will a nosql based db work?
+* f) **Special cases** for the question asked. Eg say designing a system for storing thumbnails , will a file system suffice ? What if you have to scale for facebook or google? Will a nosql based db work?
 * g) After I have my components in place , what I generally try to do is look for minor optimization in various places according to the usecases , various tradeoffs that will help in better scaling in 99% cases .
 * h) [Scaling out or up]  (http://highscalability.com/blog/2014/5/12/4-architecture-issues-when-scaling-web-applications-bottlene.html)
 * i) Check with the interviewer is there any other special case he is looking to solve ? Also it really helps if you know about the company you are interviewing with , what its architecture is , what will the interviewer have more interest in based on the company and what he works on ? 
@@ -162,4 +162,4 @@ Depending on where you are interviewing , go through the company blog . VERY USE
  7. CDN 
  8. Monetization
 
-Best of luck :) , feel free to send pull requests to add more content to this git! Will be updating it from time to time .
+Best of luck :+1: , feel free to send pull requests to add more content to this git! Will be updating it from time to time .
