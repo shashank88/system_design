@@ -24,7 +24,7 @@ Feel free to go through other lectures if needed.
 * [david huffman's talk , scaling up talk](https://www.udacity.com/course/web-development--cs253)
 
 * [scalability for dummies](http://www.lecloud.net/tagged/scalability)
-* 
+
 These talks should give you decent ammo to start formulating some architectures yourself . 
 
 ## <a name 'basics'>Basics</a>
