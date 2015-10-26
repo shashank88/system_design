@@ -96,14 +96,14 @@ It generally depends what you are and you will be working on . Also what your le
 
 Personally I looked into the following architectures:
 
-* [Google file system](http://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf)
-* [facebook haystack needle architecture](https://www.usenix.org/legacy/event/osdi10/tech/full_papers/Beaver.pdf)
-* [facebook graph api](https://cs.uwaterloo.ca/~brecht/courses/854-Emerging-2014/readings/data-store/tao-facebook-distributed-datastore-atc-2013.pdf)
 * [Basics of google search](http://infolab.stanford.edu/~backrub/google.html)
-* [youtube architecture and optimizations for video](https://www.youtube.com/watch?v=ZW5_eEKEC28)
-* [Twitter scaling](https://www.youtube.com/watch?v=z8LU0Cj6BOU) and facebook feeds
+* [Google file system](http://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf)
 * [Instagram](http://instagram-engineering.tumblr.com/post/13649370142/what-powers-instagram-hundreds-of-instances) and other image based social networks
 * [Memcache scaling by facebook](https://cs.uwaterloo.ca/~brecht/courses/854-Emerging-2014/readings/key-value/fb-memcached-nsdi-2013.pdf)
+* [Twitter scaling](https://www.youtube.com/watch?v=z8LU0Cj6BOU) and facebook feeds
+* [facebook graph api](https://cs.uwaterloo.ca/~brecht/courses/854-Emerging-2014/readings/data-store/tao-facebook-distributed-datastore-atc-2013.pdf)
+* [facebook haystack needle architecture](https://www.usenix.org/legacy/event/osdi10/tech/full_papers/Beaver.pdf)
+* [youtube architecture and optimizations for video](https://www.youtube.com/watch?v=ZW5_eEKEC28)
 * Broad overview and advantages of Redis , mongodb , cassandra. 
 * Basics of messaging frameworks like Kafka , queuing architectures like rabbitmq .
 * [Google architecture] (http://highscalability.com/google-architecture)
@@ -114,35 +114,35 @@ courtesy [checkcheckzz](https://github.com/checkcheckzz/system-design-interview#
 
 Depending on where you are interviewing , go through the company blog . VERY USEFUL IN INTERVIEWS! It really helps if you have an idea of the architecture , as the questions asked will generally be of that domain and your prior knowledge will help out here.
 
-* [High Scalability](http://highscalability.com/)
-* [The GitHub Blog](https://github.com/blog/category/engineering)
-* [Engineering at Quora](http://engineering.quora.com/)
-* [Yelp Engineering Blog](http://engineeringblog.yelp.com/)
-* [Twitter Engineering](https://engineering.twitter.com/)
-* [Facebook Engineering](https://www.facebook.com/Engineering)
-* [Yammer Engineering](http://eng.yammer.com/blog/)
-* [Etsy Code as Craft](http://codeascraft.com/)
-* [Foursquare Engineering Blog](http://engineering.foursquare.com/)
 * [Airbnb Engineering](http://nerds.airbnb.com/)
-* [WebEngage Engineering Blog](http://engineering.webengage.com/)
-* [LinkedIn Engineering](http://engineering.linkedin.com/blog)
-* [The Netflix Tech Blog](http://techblog.netflix.com/)
-* [BankSimple Simple Blog](https://www.simple.com/engineering/)
-* [Square The Corner](http://corner.squareup.com/)
-* [SoundCloud Backstage Blog](https://developers.soundcloud.com/blog/)
-* [Flickr Code](http://code.flickr.net/)
-* [Instagram Engineering](http://instagram-engineering.tumblr.com/)
-* [Dropbox Tech Blog](https://tech.dropbox.com/)
-* [Cloudera Developer Blog](http://blog.cloudera.com/blog/)
 * [Bandcamp Tech](http://bandcamptech.wordpress.com/)
-* [Oyster Tech Blog](http://tech.oyster.com/)
-* [THE REDDIT BLOG](http://www.redditblog.com/)
-* [Groupn Engineering Blog](https://engineering.groupon.com/)
-* [Songkick Technology Blog](http://devblog.songkick.com/)
-* [Google Research Blog](http://googleresearch.blogspot.com/)
-* [Pinterest Engineering Blog](http://engineering.pinterest.com/)
-* [Twilio Engineering Blog](http://www.twilio.com/engineering)
+* [BankSimple Simple Blog](https://www.simple.com/engineering/)
 * [Bitly Engineering Blog](http://word.bitly.com/)
+* [Cloudera Developer Blog](http://blog.cloudera.com/blog/)
+* [Dropbox Tech Blog](https://tech.dropbox.com/)
+* [Engineering at Quora](http://engineering.quora.com/)
+* [Etsy Code as Craft](http://codeascraft.com/)
+* [Facebook Engineering](https://www.facebook.com/Engineering)
+* [Flickr Code](http://code.flickr.net/)
+* [Foursquare Engineering Blog](http://engineering.foursquare.com/)
+* [Google Research Blog](http://googleresearch.blogspot.com/)
+* [Groupn Engineering Blog](https://engineering.groupon.com/)
+* [High Scalability](http://highscalability.com/)
+* [Instagram Engineering](http://instagram-engineering.tumblr.com/)
+* [LinkedIn Engineering](http://engineering.linkedin.com/blog)
+* [Oyster Tech Blog](http://tech.oyster.com/)
+* [Pinterest Engineering Blog](http://engineering.pinterest.com/)
+* [Songkick Technology Blog](http://devblog.songkick.com/)
+* [SoundCloud Backstage Blog](https://developers.soundcloud.com/blog/)
+* [Square The Corner](http://corner.squareup.com/)
+* [THE REDDIT BLOG](http://www.redditblog.com/)
+* [The GitHub Blog](https://github.com/blog/category/engineering)
+* [The Netflix Tech Blog](http://techblog.netflix.com/)
+* [Twilio Engineering Blog](http://www.twilio.com/engineering)
+* [Twitter Engineering](https://engineering.twitter.com/)
+* [WebEngage Engineering Blog](http://engineering.webengage.com/)
+* [Yammer Engineering](http://eng.yammer.com/blog/)
+* [Yelp Engineering Blog](http://engineeringblog.yelp.com/)
 
 
 ## <a name='tldr'>Low on time ?</a>
