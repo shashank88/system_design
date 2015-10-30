@@ -1,94 +1,94 @@
 # SYSTEM DESIGN PREPARATION
-* How to prepare and answer system design questions:
+* How to prepare and answer system design questions!
 
 ## Objective
 I collected and studied from a lot of links while preparing for interviews this year and realized that unlike coding questions which has plenty of good repos and combined resources , system design remains elusive. People end up reading from scattered resources and might get pigeon-holed into studying one specific domain and get tongue tied when answering such questions. Hence I collected these links and design techniques for interviews , thought I should share with everyone :bowtie:
-If you are already familiar with the basics ( given below) it will take you ~2 months to gain a strong foothold over such questions . If you have much less time , scroll down to the bottom for the tl;dr version :relieved:
+If you are already familiar with the basics (given below) it will take you ~2 months to gain a strong foothold over such questions . If you have much less time , scroll down to the bottom for the tl;dr version :relieved:
 
 ## Index
 - [ ] [Where to start from?](#start)
-- [ ] [basics](#basics)
+- [ ] [Basics](#basics)
 - [ ] [How to answer in interviews](#howtoans)
-- [ ] [Steps how I approach the system design questions in interviews](#myapproach)
+- [ ] [Steps of how I approach System Design questions in interviews](#myapproach)
 - [ ] [Common Design questions](#designques)
-- [ ] [architecture](#architecture)
-- [ ] [company engineering blog links](#blog)
+- [ ] [Architecture](#architecture)
+- [ ] [Company Engineering Blog Links](#blog)
 - [ ] [Low on time ?](#tldr)
 
 ## <a name='start'>Where to start from?</a>
 
 For a very broad overview please go through these lectures , really useful:
-* [david malans cs75 scalability talk](https://www.youtube.com/watch?v=-W9F__D3oY4&list=PLmhRNZyYVpDmLpaVQm3mK5PY5KB_4hLjE&index=10)
-Feel free to go through other lectures if needed. 
+* [David Malans cs75 scalability talk](https://www.youtube.com/watch?v=-W9F__D3oY4&list=PLmhRNZyYVpDmLpaVQm3mK5PY5KB_4hLjE&index=10)
+(feel free to go through other lectures if needed)
 
-* [david huffman's talk , scaling up talk](https://www.udacity.com/course/web-development--cs253) ([Youtube link](https://www.youtube.com/watch?v=pjNTgULVVf4&list=PLVi1LmRuKQ0NINQfjKLVen7J2lZFL35wP&index=1))
+* [David Huffman's talk , scaling up talk](https://www.udacity.com/course/web-development--cs253)
 
-* [scalability for dummies](http://www.lecloud.net/tagged/scalability)
+* [Scalability for Dummies](http://www.lecloud.net/tagged/scalability)
 
 These talks should give you decent ammo to start formulating some architectures yourself . 
 
-## <a name 'basics'>Basics</a>
+## <a name 'Basics'>Basics</a>
 
 But before you begin , here are some topics(in no particular order) which in my opinion you should have a decent idea of before proceeding.
 
 1. Operating system basics: how a file system , virtual memory , paging , instruction execution cycle etc work
 (For starters silbershatz should be enough , if you already have decent knowledge try stallings book on OS)
 2. Networking basics : 
-Should know the TCP/IP stack , basics of how internet , HTTP , TCP/IP work at the minimum . cs75 on youtube (1st lecture ) should give a broad overview . I personally love [networking-a top down approach](http://www.amazon.com/Computer-Networking-Top-Down-Approach-Edition/dp/0132856204) .
+Should know the TCP/IP stack , basics of how Internet , HTTP , TCP/IP work at the minimum . cs75 on youtube (1st lecture ) should give a broad overview . I personally love [Computer Networking: A Top-Down Approach](http://www.amazon.com/Computer-Networking-Top-Down-Approach-Edition/dp/0132856204) .
 3. Concurrency basics : threads , processes , threading in the language you know . Locks , mutex etc . 
-4. DB basics: types of DB's (sql vs no sql etc ),hashing and indexing , EAV based dbs . Sharding , caching for dbs , master slave etc
+4. DB basics: types of DB's (SQL vs NoSQL etc ),hashing and indexing , EAV based dbs . Sharding , caching for dbs , master slave etc
 5. A basic idea of how a basic architecture is , say load balancers , proxy , servers , db servers , caching servers , precompute , logging big data etc. Just know broadly what is each layer for.  
-6. very basic summary of what the [CAP therem](http://robertgreiner.com/2014/08/cap-theorem-revisited/) is (Have never been asked about the theorem itself , but knowing it will help you in designing large scale systems. 
+6. very basic summary of what the [CAP Theorem](http://robertgreiner.com/2014/08/cap-theorem-revisited/) is ( Have never been asked about the theorem itself , but knowing it will help you in designing large scale systems ). 
 
 ## <a name='howtoans'> How to answer in interviews </a>
 
-* I found [hiredintech](http://www.hiredintech.com/system-design) videos an excellent place to start with . The way how to approach a design question as given in the link is really useful . It goes into how we start with clearing the use-cases of the system , then thinking in abstract manner of the various component and the interactions . Think about the bottlenecks of the system and what is more critical for your system ( eg latency vs reliability vs uptime etc) Address those giving the tradeoff of your appraoch. 
+* I found [hiredintech](http://www.hiredintech.com/system-design) videos an excellent place to start with . The way how to approach a design question as given in the link is really useful . It goes into how we start with clearing the use-cases of the system , then thinking of the various component and the interactions in an abstract manner . Think about the bottlenecks of the system and what is more critical for your system (eg. latency vs reliability vs uptime etc.) . Address those by giving the trade-offs of your approach. 
 
-* [system design in crack the coding interview](http://www.flipkart.com/cracking-coding-interview-150-programming-questions-solutions-english-5th/p/itmdz4pvzbhcv6uv) : good approach on how to begin attacking a problem by first solving for a small usecase then expanding the system .
+* [System Design in crack the coding interview](http://www.flipkart.com/cracking-coding-interview-150-programming-questions-solutions-english-5th/p/itmdz4pvzbhcv6uv) : Good approach on how to begin attacking a problem by first solving for a small use-case then expanding the system .
 
-* The best way to prepare for such questions is do mock interviews , pick any topic (given below) try to comeup with a design and then go and see how and why it is designed in that manner. There is absolutely no alternative to practice!! Whiteboarding a system design question is similar to actually writing code and testing it ! Just reading will only take you so far.
+* The best way to prepare for such questions is do mock interviews , pick any topic (given below) try to come up with a design and then go and see how and why it is designed in that manner. There is absolutely no alternative to practice!! Whiteboarding a system design question is similar to actually writing code and testing it ! Just reading will only take you so far.
 
-## <a name='myapproach'>Steps how I approach the system design questions in interviews</a>
+## <a name='myapproach'>Steps of how I approach system design questions in interviews</a>
 
 These are the steps I go through mentally in the interviews , followed by actual interview experiences:
 
-* a) **Be absolutely sure you understand the problem being asked** , clarify on the onset rather than assuming anything 
-* b) **Use-cases** . This is critical , you MUST know what is the system going to be used for , what is the scale it is going to be used for . Also constraints like requests per second, requests types, data written per second, data read per second.
-* c) Solve the problem for a **very small set**, say 100 users . This will broadly help you figure out the data structures , components , abstract design of the overall model
-* d) Write down the various components figured out so far and how will they interact with each other.
-* e)  As a rule of thumb remember atleast these :
- * 1.processing and servers
- * 2.storage 
- * 3.caching 
- * 4.concurrency and communication
- * 5.security 
- * 6.load balancing and proxy 
- * 7.CDN 
- * 8. Monetization : if relevant , how will you monetize?
- eg . What kind of DB (will mysql do ? or nosql fits btr? ) , do you need caching (almost always !) and how much , is security a prime concern? 
-* f) **Special cases** for the question asked. Eg say designing a system for storing thumbnails , will a file system suffice ? What if you have to scale for facebook or google? Will a nosql based db work?
-* g) After I have my components in place , what I generally try to do is look for minor optimization in various places according to the usecases , various tradeoffs that will help in better scaling in 99% cases .
-* h) [Scaling out or up]  (http://highscalability.com/blog/2014/5/12/4-architecture-issues-when-scaling-web-applications-bottlene.html)
-* i) Check with the interviewer is there any other special case he is looking to solve ? Also it really helps if you know about the company you are interviewing with , what its architecture is , what will the interviewer have more interest in based on the company and what he works on ? 
+1. **Be absolutely sure you understand the problem being asked !** Clarify on the onset rather than assuming anything 
+2. **Use-cases!** This is critical , you MUST know what is the system going to be used for , what is the scale it is going to be used for . Also constraints like requests per second, requests types, data written per second, data read per second.
+3. Solve the problem for a **very small set**, say 100 users . This will broadly help you figure out the data structures , components , abstract design of the overall model
+4. Write down the various components figured out so far and how will they interact with each other.
+5. As a rule of thumb remember at least these :
+ 1. Processing and Servers
+ 2. Storage 
+ 3. Caching 
+ 4. Concurrency and Communication
+ 5. Security 
+ 6. Load balancing and Proxy 
+ 7. CDN 
+ 8. Monetization : if relevant , how will you monetize?
+ eg . What kind of DB (will MySQL do ? or NoSQL fits btr? ) , do you need caching (almost always !) and how much , is security a prime concern? 
+6. **Special cases** for the question asked. Eg. say designing a system for storing thumbnails , will a file system suffice ? What if you have to scale for Facebook or Google? Will a NoSQL based db work?
+7. After I have my components in place , what I generally try to do is look for minor optimization in various places according to the use-cases , various trade-offs that will help in better scaling in 99% cases .
+8. [Scaling out or up]  (http://highscalability.com/blog/2014/5/12/4-architecture-issues-when-scaling-web-applications-bottlene.html)
+9. Check with the interviewer is there any other special case he is looking to solve ? Also it really helps if you know about the company you are interviewing with , what its architecture is , what will the interviewer have more interest in based on the company and what he works on ? 
 
 ## <a name='designques'> Common Design questions </a>
 It generally depends what you are and you will be working on . Also what your level is but these are some of the more frequent interview questions .
 
-* Design amazon's frequently viewed product page (eg. which shows the last 5 items you saw)
+* Design Amazon's frequently viewed product page (eg. which shows the last 5 items you saw)
 * Design an online poker game for multiplayer . Solve for persistence , concurrency , scale . Draw the ER diagram for this 
-* Design a [url compression system] (http://www.hiredintech.com/system-design/the-system-design-process/)
+* Design a [URL compression system] (http://www.hiredintech.com/system-design/the-system-design-process/)
 * [Search engine](http://infolab.stanford.edu/~backrub/google.html) ( generally asked with people who have some domain knowledge ) : basic crawling , collection , hashing etc. Dependes on your expertise on this topic
-* Design dropbox's architecture . [good talk on this](https://www.youtube.com/watch?v=PE4gwstWhmc)
+* Design Dropbox's architecture . [good talk on this](https://www.youtube.com/watch?v=PE4gwstWhmc)
 * Design a [picture sharing website](http://highscalability.com/blog/2011/12/6/instagram-architecture-14-million-users-terabytes-of-photos.html). How will you store thumbnails , photos? Usage of CDNS? caching at various layers etc .
-* * Design a news feed (eg facebook , twitter ) : [news feed](http://www.quora.com/Software-Engineering-Best-Practices/What-are-best-practices-for-building-something-like-a-News-Feed)
-* Design a product based on maps , eg hotel / ATM finder given a location. 
+* Design a news feed (eg. Facebook , Twitter ) : [news feed](http://www.quora.com/Software-Engineering-Best-Practices/What-are-best-practices-for-building-something-like-a-News-Feed)
+* Design a product based on maps (eg. hotel / ATM finder given a location ) .
 * Design malloc , free and [garbage collection system](http://courses.cs.washington.edu/courses/csep521/07wi/prj/rick.pdf) . What data structures to use? decorator pattern over malloc etc
-* Design a site like [junglee.com](http://www.junglee.com/) i.e price comparision , availability on ecommerce websites. When and will you cache , how much to query , how to crawl efficiently over ecommerce sites, sharding of dbs , basic db design
-* A web application for chatting , eg [whatsapp](http://highscalability.com/blog/2014/2/26/the-whatsapp-architecture-facebook-bought-for-19-billion.html) , facebook chat . Issues of each , scaling problems , status and availablility notification etc.
-* Design a system for collaberating over a document simulataneously (eg [google docs](https://neil.fraser.name/writing/sync/))
+* Design a site like [junglee.com](http://www.junglee.com/) i.e price comparison , availability on e-commerce websites. When and will you cache , how much to query , how to crawl efficiently over e-commerce sites, sharding of dbs , basic db design
+* A web application for chatting (eg. [Whatsapp](http://highscalability.com/blog/2014/2/26/the-whatsapp-architecture-facebook-bought-for-19-billion.html) , Facebook chat) . Issues of each , scaling problems , status and availability notification etc.
+* Design a system for collaborating over a document simultaneously (eg. [Google docs](https://neil.fraser.name/writing/sync/))
 * (very common:) top 'n' or most frequent items of a running stream of data
 * Design election commission architecture :
- Let's say we work with the Election Commission. On Counting day, we want to collate the votes received at the lakhs of voting booths all over the country. Each booth has a voting machine, which, when connected to the network, returns an array of the form {[party_id, num_votes],[party_id_2, num_votes_2],...}. We want to collect these and get the current scores in real time. The report we need continuously is how many seats is each party leading in. Please design a system f rthis
+ Let's say we work with the Election Commission. On Counting day, we want to collate the votes received at the lakhs of voting booths all over the country. Each booth has a voting machine, which, when connected to the network, returns an array of the form {[party_id, num_votes],[party_id_2, num_votes_2],...}. We want to collect these and get the current scores in real time. The report we need continuously is how many seats is each party leading in. Please design a system for this.
 * Design a logging system
  (For web applications, it is common to have a large number of servers running the same application, with a load balancer in front to distribute the incoming requests. In this scenario, we want to check and alarm in case an exception is thrown in any of the servers. We want a system that checks for appearance of specific words, "Exception", "Disk Full" etc. in the logs of any of the servers. How would you design this system?)
 
@@ -96,72 +96,70 @@ It generally depends what you are and you will be working on . Also what your le
 
 Personally I looked into the following architectures:
 
-* [Basics of google search](http://infolab.stanford.edu/~backrub/google.html)
-* Basics of messaging frameworks like Kafka , queuing architectures like rabbitmq .
-* Broad overview and advantages of Redis , mongodb , cassandra. 
-* [Google file system](http://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf)
+* [Basics of Google search](http://infolab.stanford.edu/~backrub/google.html)
+* Basics of messaging frameworks like Kafka , queuing architectures like RabbitMQ .
+* Broad overview and advantages of Redis , MongoDB , Cassandra. 
+* [Facebook haystack needle architecture](https://www.usenix.org/legacy/event/osdi10/tech/full_papers/Beaver.pdf)
+* [Facebook graph API](https://cs.uwaterloo.ca/~brecht/courses/854-Emerging-2014/readings/data-store/tao-facebook-distributed-datastore-atc-2013.pdf)
 * [Google architecture] (http://highscalability.com/google-architecture)
+* [Google file system](http://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf)
 * [Instagram](http://instagram-engineering.tumblr.com/post/13649370142/what-powers-instagram-hundreds-of-instances) and other image based social networks
-* [Memcache scaling by facebook](https://cs.uwaterloo.ca/~brecht/courses/854-Emerging-2014/readings/key-value/fb-memcached-nsdi-2013.pdf)
+* [Memcache scaling by Facebook](https://cs.uwaterloo.ca/~brecht/courses/854-Emerging-2014/readings/key-value/fb-memcached-nsdi-2013.pdf)
 * [Twitter scaling](https://www.youtube.com/watch?v=z8LU0Cj6BOU) and facebook feeds
-* [facebook graph api](https://cs.uwaterloo.ca/~brecht/courses/854-Emerging-2014/readings/data-store/tao-facebook-distributed-datastore-atc-2013.pdf)
-* [facebook haystack needle architecture](https://www.usenix.org/legacy/event/osdi10/tech/full_papers/Beaver.pdf)
-* [youtube architecture and optimizations for video](https://www.youtube.com/watch?v=ZW5_eEKEC28)
+* [Youtube architecture and optimizations for video](https://www.youtube.com/watch?v=ZW5_eEKEC28)
 
 
+## <a name='blog'>Company Engineering Blog Links </a>
 
+Courtesy of [checkcheckzz](https://github.com/checkcheckzz/system-design-interview#toc)
 
-## <a name='blog'>company engineering blog links </a>
+Depending on where you are interviewing , go through the company's blog . VERY USEFUL IN INTERVIEWS! It really helps if you have an idea of the architecture , as the questions asked will generally be of that domain and your prior knowledge will help out here.
 
-courtesy [checkcheckzz](https://github.com/checkcheckzz/system-design-interview#toc)
-
-Depending on where you are interviewing , go through the company blog . VERY USEFUL IN INTERVIEWS! It really helps if you have an idea of the architecture , as the questions asked will generally be of that domain and your prior knowledge will help out here.
-
-* [Airbnb Engineering](http://nerds.airbnb.com/)
-* [Bandcamp Tech](http://bandcamptech.wordpress.com/)
-* [BankSimple Simple Blog](https://www.simple.com/engineering/)
-* [Bitly Engineering Blog](http://word.bitly.com/)
-* [Cloudera Developer Blog](http://blog.cloudera.com/blog/)
-* [Dropbox Tech Blog](https://tech.dropbox.com/)
-* [Engineering at Quora](http://engineering.quora.com/)
-* [Etsy Code as Craft](http://codeascraft.com/)
-* [Facebook Engineering](https://www.facebook.com/Engineering)
-* [Flickr Code](http://code.flickr.net/)
-* [Foursquare Engineering Blog](http://engineering.foursquare.com/)
-* [Google Research Blog](http://googleresearch.blogspot.com/)
-* [Groupn Engineering Blog](https://engineering.groupon.com/)
 * [High Scalability](http://highscalability.com/)
-* [Instagram Engineering](http://instagram-engineering.tumblr.com/)
-* [LinkedIn Engineering](http://engineering.linkedin.com/blog)
-* [Oyster Tech Blog](http://tech.oyster.com/)
-* [Pinterest Engineering Blog](http://engineering.pinterest.com/)
-* [Songkick Technology Blog](http://devblog.songkick.com/)
-* [SoundCloud Backstage Blog](https://developers.soundcloud.com/blog/)
-* [Square The Corner](http://corner.squareup.com/)
-* [THE REDDIT BLOG](http://www.redditblog.com/)
 * [The GitHub Blog](https://github.com/blog/category/engineering)
-* [The Netflix Tech Blog](http://techblog.netflix.com/)
-* [Twilio Engineering Blog](http://www.twilio.com/engineering)
-* [Twitter Engineering](https://engineering.twitter.com/)
-* [WebEngage Engineering Blog](http://engineering.webengage.com/)
-* [Yammer Engineering](http://eng.yammer.com/blog/)
+* [Engineering at Quora](http://engineering.quora.com/)
 * [Yelp Engineering Blog](http://engineeringblog.yelp.com/)
+* [Twitter Engineering](https://engineering.twitter.com/)
+* [Facebook Engineering](https://www.facebook.com/Engineering)
+* [Yammer Engineering](http://eng.yammer.com/blog/)
+* [Etsy Code as Craft](http://codeascraft.com/)
+* [Foursquare Engineering Blog](http://engineering.foursquare.com/)
+* [Airbnb Engineering](http://nerds.airbnb.com/)
+* [WebEngage Engineering Blog](http://engineering.webengage.com/)
+* [LinkedIn Engineering](http://engineering.linkedin.com/blog)
+* [The Netflix Tech Blog](http://techblog.netflix.com/)
+* [BankSimple Simple Blog](https://www.simple.com/engineering/)
+* [Square The Corner](http://corner.squareup.com/)
+* [SoundCloud Backstage Blog](https://developers.soundcloud.com/blog/)
+* [Flickr Code](http://code.flickr.net/)
+* [Instagram Engineering](http://instagram-engineering.tumblr.com/)
+* [Dropbox Tech Blog](https://tech.dropbox.com/)
+* [Cloudera Developer Blog](http://blog.cloudera.com/blog/)
+* [Bandcamp Tech](http://bandcamptech.wordpress.com/)
+* [Oyster Tech Blog](http://tech.oyster.com/)
+* [THE REDDIT BLOG](http://www.redditblog.com/)
+* [Groupn Engineering Blog](https://engineering.groupon.com/)
+* [Songkick Technology Blog](http://devblog.songkick.com/)
+* [Google Research Blog](http://googleresearch.blogspot.com/)
+* [Pinterest Engineering Blog](http://engineering.pinterest.com/)
+* [Twilio Engineering Blog](http://www.twilio.com/engineering)
+* [Bitly Engineering Blog](http://word.bitly.com/)
 
 
 ## <a name='tldr'>Low on time ?</a>
 
-**I would HIGHLY recommend you dont take a shortcut unless you have a week or so for an interview . System design is best learnt by practicing , shortcuts might help you in the short term , but would recommend coming back to this link for an indepth understanding after the interview**
+**I HIGHLY recommend that you dont take a shortcut unless you have a week or so for an interview . System design is best learnt by practicing , shortcuts might help you in the short term , but I recommend coming back to this link for an in-depth understanding after the interview**
 
-* a)Go through cs76 and udacity's links given above for scaling systems. 
-* b)Go through the engineering blog of the company you are interviewing in (or if its a startup go through the link of the company closest to yours)
-* c)See this talk : http://www.hiredintech.com/system-design/the-system-design-process/ and develop a process for how to answer such questions .
-* d) remember these terms , just roll over them in your interview in your mind , and if relevant mention it in the interview 
- 1. processing and servers
- 2. storage 
- 3. caching 
- 4. concurrency and communication
- 5. security 
- 6. load balancing and proxy 
+1. Go through cs76 and Udacity's links given above for scaling systems. 
+2. Go through the engineering blog of the company you are interviewing in (if its a startup go through the link of the company closest to it)
+3. See this talk : http://www.hiredintech.com/system-design/the-system-design-process/ and develop a process for how to answer such questions .
+4. Remember these terms , just roll over them in your interview in your mind , and if relevant mention it in the interview .
+ 1. Processing and Servers
+ 2. Storage 
+ 3. Caching 
+ 4. Concurrency and Communication
+ 5. Security 
+ 6. Load balancing and Proxy 
  7. CDN 
  8. Monetization
 
