@@ -121,7 +121,7 @@ Depending on where you are interviewing, go through the company blog . VERY USEF
 * [Bandcamp Tech](http://bandcamptech.wordpress.com/)
 * [BankSimple Simple Blog](https://www.simple.com/engineering/)
 * [Bitly Engineering Blog](http://word.bitly.com/)
-* [Cloudera Developer Blog](http://blog.cloudera.com/blog/)
+* [Cloudera Developer Blog](http://blog.cloudera.com)
 * [Dropbox Tech Blog](https://tech.dropbox.com/)
 * [Engineering at Quora](http://engineering.quora.com/)
 * [Etsy Code as Craft](http://codeascraft.com/)
