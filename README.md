@@ -79,7 +79,7 @@ It generally depends what you are and you will be working on. Also what your lev
 * Design a [url compression system] (http://www.hiredintech.com/system-design/the-system-design-process/)
 * [Search engine](http://infolab.stanford.edu/~backrub/google.html) (generally asked with people who have some domain knowledge ) : basic crawling, collection, hashing etc. Dependes on your expertise on this topic
 * Design dropbox's architecture. [good talk on this](https://www.youtube.com/watch?v=PE4gwstWhmc)
-* Design a [picture sharing website](http://highscalability.com/blog/2011/12/6/instagram-architecture-14-million-users-terabytes-of-photos.html). How will you store thumbnails, photos? Usage of CDNS? caching at various layers etc.
+* Design a [picture sharing website](http://highscalability.com/blog/2011/12/6/instagram-architecture-14-million-users-terabytes-of-photos.html). How will you store thumbnails, photos? Usage of CDN'S? caching at various layers etc.
 * * Design a news feed (eg facebook , twitter): [news feed](http://www.quora.com/Software-Engineering-Best-Practices/What-are-best-practices-for-building-something-like-a-News-Feed)
 * Design a product based on maps, eg hotel / ATM finder given a location. 
 * Design malloc, free and [garbage collection system](http://courses.cs.washington.edu/courses/csep521/07wi/prj/rick.pdf) . What data structures to use? decorator pattern over malloc etc.
