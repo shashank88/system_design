@@ -15,7 +15,7 @@ If you are already familiar with the basics (given below) it will take you ~2 mo
 - [ ] [company engineering blog links](#blog)
 - [ ] [Low on time ?](#tldr)
 
-## <a name='start'>Where to start from?</a>
+## Where to start from?</a>
 
 For a very broad overview please go through these lectures, really useful:
 * [david malans cs75 scalability talk](https://www.youtube.com/watch?v=-W9F__D3oY4&list=PLmhRNZyYVpDmLpaVQm3mK5PY5KB_4hLjE&index=10)
