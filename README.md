@@ -1,12 +1,15 @@
 # SYSTEM DESIGN PREPARATION
-* How to prepare and answer system design questions:
+* How to prepare for and answer system design questions
 
 ## Objective
-I collected and studied from a lot of links while preparing for interviews this year and realized that unlike coding questions which has plenty of good repos and combined resources, system design remains elusive. People end up reading from scattered resources and might get pigeon-holed into studying one specific domain and get tongue tied when answering such questions. Hence I collected these links and design techniques for interviews, thought I should share with everyone.
-If you are already familiar with the basics (given below) it will take you ~2 months to gain a strong foothold over such questions. If you have much less time, scroll down to the bottom for the tl;dr version.
+*Learning about and implementing large scale distributed system is not easy. I do not want to give the impression that it's something that can be learnt in a month.* What this repository aims to achieve is for software engineers and students to get a rough idea of how the thought process of designing a large scale works and how big companies have managed to solve really hard problems. Along with that, there is a recent trend for companies to have an open ended interview with system design questions which is at times hard for engineers of all levels if they haven't gotten the oppurtunity to work on such systems themselves. 
+
+This is a collection of links / documents for the following usecases:
+a) Prepare for a system design or open ended rounds.
+b) Learn more about how large scale systems work and thought process of designing a new system.
 
 ## Index
-- [ ] [Where to start from?](#start)
+- [ ] [Starting point](#start)
 - [ ] [basics](#basics)
 - [ ] [How to answer in interviews](#howtoans)
 - [ ] [Steps how I approach the system design questions in interviews](#myapproach)
@@ -15,7 +18,7 @@ If you are already familiar with the basics (given below) it will take you ~2 mo
 - [ ] [company engineering blog links](#blog)
 - [ ] [Low on time ?](#tldr)
 
-## Where to start from?</a>
+## <a name='start'> Starting point </a>
 
 For a very broad overview please go through these lectures, really useful:
 * [david malans cs75 scalability talk](https://www.youtube.com/watch?v=-W9F__D3oY4&list=PLmhRNZyYVpDmLpaVQm3mK5PY5KB_4hLjE&index=10)
@@ -25,7 +28,9 @@ Feel free to go through other lectures if needed.
 
 * [scalability for dummies](http://www.lecloud.net/tagged/scalability)
 
-These talks should give you decent ammo to start formulating some architectures yourself. 
+* [Designing data intensive appliations]() This is by far one of the best books about large scale systems and the practical challanges encountered during building them. It's focussed more on data oriented applications though.
+
+These talks should give you a starting point on how to think about such problems.
 
 ## <a name 'basics'>Basics</a>
 
@@ -65,8 +70,8 @@ These are the steps I go through mentally in the interviews, followed by actual 
  * 6.load balancing and proxy 
  * 7.CDN 
  * 8. Monetization: if relevant, how will you monetize?
- eg . What kind of DB (will mysql do ? or nosql fits btr? ), do you need caching (almost always !) and how much, is security a prime concern? 
-* f) **Special cases** for the question asked. Eg say designing a system for storing thumbnails, will a file system suffice? What if you have to scale for facebook or google? Will a nosql based db work?
+ eg . What kind of DB (Is Postgres enough, if not why?), do you need caching and how much, is security a prime concern? 
+* f) **Special cases** for the question asked. Say designing a system for storing thumbnails, will a file system be enough? What if you have to scale for facebook or google? Will a nosql based db work?
 * g) After I have my components in place, what I generally try to do is look for minor optimization in various places according to the usecases, various tradeoffs that will help in better scaling in 99% cases.
 * h) [Scaling out or up]  (http://highscalability.com/blog/2014/5/12/4-architecture-issues-when-scaling-web-applications-bottlene.html)
 * i) Check with the interviewer is there any other special case he is looking to solve? Also it really helps if you know about the company you are interviewing with, what its architecture is, what will the interviewer have more interest in based on the company and what he works on? 
@@ -108,9 +113,6 @@ Personally I looked into the following architectures:
 * [facebook haystack needle architecture](https://www.usenix.org/legacy/event/osdi10/tech/full_papers/Beaver.pdf)
 * [youtube architecture and optimizations for video](https://www.youtube.com/watch?v=ZW5_eEKEC28)
 
-
-
-
 ## <a name='blog'>company engineering blog links </a>
 
 courtesy [checkcheckzz](https://github.com/checkcheckzz/system-design-interview#toc)
@@ -146,7 +148,7 @@ Depending on where you are interviewing, go through the company blog . VERY USEF
 * [WebEngage Engineering Blog](http://engineering.webengage.com/)
 * [Yammer Engineering](http://eng.yammer.com/blog/)
 * [Yelp Engineering Blog](http://engineeringblog.yelp.com/)
-
+* [Smarkets Blog](https://smarketshq.com/)
 
 ## <a name='tldr'>Low on time ?</a>
 
@@ -165,4 +167,4 @@ Depending on where you are interviewing, go through the company blog . VERY USEF
  7. CDN 
  8. Monetization
 
-Best of luck :+1:, feel free to send pull requests to add more content to this git! Will be updating it from time to time.
+Best of luck :+1:, feel free to send pull requests to add more content to this git!
