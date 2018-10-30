@@ -80,6 +80,7 @@ These are the steps I go through mentally in the interviews, followed by actual 
 It generally depends what you are and you will be working on. Also what your level is but these are some of the more frequent interview questions.
 
 * Design amazon's frequently viewed product page (eg. which shows the last 5 items you saw)
+* Design a movie-ticket booking facility(like BookMyShow) with facilities like adding screen info,check seat availability,hold seat for user while transaction takes place,dynamic pricing according to movie's popularity, manage peak usage when a blockbuster releases.
 * Design an online poker game for multiplayer. Solve for persistence, concurrency, scale . Draw the ER diagram for this 
 * Design a [url compression system] (http://www.hiredintech.com/system-design/the-system-design-process/)
 * [Search engine](http://infolab.stanford.edu/~backrub/google.html) (generally asked with people who have some domain knowledge ) : basic crawling, collection, hashing etc. Dependes on your expertise on this topic
