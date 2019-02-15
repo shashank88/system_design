@@ -114,7 +114,7 @@ Personally I looked into the following architectures:
 * [facebook haystack needle architecture](https://www.usenix.org/legacy/event/osdi10/tech/full_papers/Beaver.pdf)
 * [youtube architecture and optimizations for video](https://www.youtube.com/watch?v=ZW5_eEKEC28)
 
-## <a name='blog'>company engineering blog links </a>
+## <a name='blog'>Company engineering blog links </a>
 
 courtesy [checkcheckzz](https://github.com/checkcheckzz/system-design-interview#toc)
 
