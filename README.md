@@ -155,7 +155,7 @@ Depending on where you are interviewing, go through the company blog. VERY USEFU
 
 **I would HIGHLY recommend you do not take a shortcut unless you have a week or so for an interview. System design is best learnt by practising, shortcuts might help you in the short term, but would recommend coming back to this link for an in-depth understanding after the interview**
 
-* a) Go through cs76 and Udacity's links given above for scaling systems. 
+* a) Go through cs75 and Udacity's links given above for scaling systems. 
 * b) Go through the engineering blog of the company you are interviewing in (or if its a startup go through the link of the company closest to yours)
 * c) See this talk: http://www.hiredintech.com/system-design/the-system-design-process/ and develop a process for how to answer such questions.
 * d) Remember these terms, just roll over them in your interview in your mind, and if relevant mention it in the interview 
