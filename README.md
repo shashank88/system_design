@@ -124,6 +124,8 @@ courtesy [checkcheckzz](https://github.com/checkcheckzz/system-design-interview#
 Depending on where you are interviewing, go through the company blog. VERY USEFUL IN INTERVIEWS! It really helps if you have an idea of the architecture, as the questions asked will generally be of that domain and your prior knowledge will help out here.
 
 * [Airbnb Engineering](http://nerds.airbnb.com/)
+* [Amazon](https://developer.amazon.com/blogs)
+* [Amazon AWS](https://aws.amazon.com/blogs/)
 * [Bandcamp Tech](http://bandcamptech.wordpress.com/)
 * [BankSimple Simple Blog](https://www.simple.com/engineering/)
 * [Bitly Engineering Blog](http://word.bitly.com/)
