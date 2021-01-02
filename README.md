@@ -34,6 +34,8 @@ Feel free to go through other lectures if needed.
 
 * [Designing data intensive appliations](https://dataintensive.net/) This is by far one of the best books about large-scale systems and the practical challenges encountered during building them. It's focussed more on data-oriented applications though.
 
+* [Distributed System playlist by Martin Kleppmann](https://www.youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB)
+
 These talks should give you a starting point on how to think about such problems.
 
 ## <a name='basics'> Basics </a>
