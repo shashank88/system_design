@@ -28,6 +28,8 @@ Starts from simple stuff like load balancing and message queues, then moves to b
 * [david malans cs75 scalability talk](https://www.youtube.com/watch?v=-W9F__D3oY4&list=PLmhRNZyYVpDmLpaVQm3mK5PY5KB_4hLjE&index=10)
 Feel free to go through other lectures if needed. 
 
+* [Bhavin(Directi)'s talk on scalability] (https://www.youtube.com/watch?v=yeyugGZO2qc&list=WL&index=7) 
+ This is another basic talk which gives good understanding on scalability aspects of building a website
 * [david huffman's talk , scaling up talk](https://www.udacity.com/course/web-development--cs253) ([Youtube link](https://www.youtube.com/watch?v=pjNTgULVVf4&list=PLVi1LmRuKQ0NINQfjKLVen7J2lZFL35wP&index=1))
 
 * [scalability for dummies](http://www.lecloud.net/tagged/scalability)
