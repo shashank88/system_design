@@ -34,6 +34,9 @@ Feel free to go through other lectures if needed.
 
 * [Designing data intensive appliations](https://dataintensive.net/) This is by far one of the best books about large-scale systems and the practical challenges encountered during building them. It's focussed more on data-oriented applications though.
 
+* [System Design Interview Preperation Series by CodeKarle](https://www.youtube.com/watch?v=3loACSxowRU&list=PLhgw50vUymycJPN6ZbGTpVKAJ0cL4OEH3) This is a collection of some of the most commonly asked system design interview question explain in a very detailed and straight forward manner.
+
+
 These talks should give you a starting point on how to think about such problems.
 
 ## <a name='basics'> Basics </a>
@@ -100,6 +103,8 @@ It generally depends what you are and you will be working on. Also what your lev
  Let's say we work with the Election Commission. On Counting day, we want to collate the votes received at the lakhs of voting booths all over the country. Each booth has a voting machine, which, when connected to the network, returns an array of the form {[party_id, num_votes],[party_id_2, num_votes_2],...}. We want to collect these and get the current scores in real time. The report we need continuously is how many seats is each party leading in. Please design a system for this.
 * Design a logging system
  (For web applications, it is common to have a large number of servers running the same application, with a load balancer in front to distribute the incoming requests. In this scenario, we want to check and alarm in case an exception is thrown in any of the servers. We want a system that checks for the appearance of specific words, "Exception", "Disk Full" etc. in the logs of any of the servers. How would you design this system?)
+ * [Design Google Maps].(https://www.codekarle.com/system-design/Google_Maps-system-design.html)
+ * [Design a Video Conferencing System like Zoom/WebEx].(https://www.codekarle.com/system-design/Zoom-system-design.html)
 
 ## <a name='architecture'>Architectures :</a>
 
