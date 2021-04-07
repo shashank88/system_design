@@ -37,6 +37,8 @@ Feel free to go through other lectures if needed.
 * [System Design Interview Preperation Series by CodeKarle](https://www.youtube.com/watch?v=3loACSxowRU&list=PLhgw50vUymycJPN6ZbGTpVKAJ0cL4OEH3) This is a collection of some of the most commonly asked system design interview question explain in a very detailed and straight forward manner.
 
 
+* [The System Design Manual](https://systemdesignmanual.com/) Covers the core aspects of distributed systems, like: network fundamentals, the theory underpinning distributed systems, architectural patterns of scalable systems, stability patterns that harden systems against failures and operational best-practices on how to maintain large-scale systems with a small team.
+
 These talks should give you a starting point on how to think about such problems.
 
 ## <a name='basics'> Basics </a>
