@@ -148,6 +148,7 @@ Depending on where you are interviewing, go through the company blog. VERY USEFU
 * [LinkedIn Engineering](http://engineering.linkedin.com/blog)
 * [Oyster Tech Blog](http://tech.oyster.com/)
 * [Pinterest Engineering Blog](http://engineering.pinterest.com/)
+* [Resulticks Martech Blog](https://www.resulticks.com/blog)
 * [Songkick Technology Blog](http://devblog.songkick.com/)
 * [SoundCloud Backstage Blog](https://developers.soundcloud.com/blog/)
 * [Square The Corner](http://corner.squareup.com/)
