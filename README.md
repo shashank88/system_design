@@ -36,6 +36,7 @@ Feel free to go through other lectures if needed.
 
 * [System Design Interview Preperation Series by CodeKarle](https://www.youtube.com/watch?v=3loACSxowRU&list=PLhgw50vUymycJPN6ZbGTpVKAJ0cL4OEH3) This is a collection of some of the most commonly asked system design interview question explain in a very detailed and straight forward manner.
 
+* [System Design Roadmap](https://roadmap.sh/system-design) Step by Step guide to System Design.
 
 These talks should give you a starting point on how to think about such problems.
 
